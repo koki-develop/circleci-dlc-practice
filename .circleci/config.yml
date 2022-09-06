@@ -9,4 +9,5 @@ jobs:
       - setup_remote_docker:
           docker_layer_caching: true
           version: 19.03.14
+      - run: ls -a
       - run: docker build .
